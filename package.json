@@ -1,0 +1,17 @@
+{
+  "name": "zivra-landing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing de ZIVRA Studio lista para Vercel",
+  "scripts": {
+    "build": "echo 'Static site ready'",
+    "dev": "serve . -l 3000",
+    "start": "serve . -l 3000"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "serve": "^14.2.0"
+  }
+}

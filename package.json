@@ -13,5 +13,11 @@
   },
   "dependencies": {
     "serve": "^14.2.0"
+    "build": "echo Static site: no build step required",
+    "dev": "npx serve . -l 3000",
+    "start": "npx serve . -l 3000"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }

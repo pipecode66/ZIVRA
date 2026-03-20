@@ -1,4 +1,15 @@
 const revealed = document.querySelectorAll(".reveal");
+const progressBar = document.querySelector(".scroll-progress");
+
+const updateScrollProgress = () => {
+  if (!progressBar) {
+    return;
+  }
+
+  const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
+  progressBar.style.width = `${Math.min(Math.max(progress, 0), 100)}%`;
+};
 
 if ("IntersectionObserver" in window) {
   const io = new IntersectionObserver(
@@ -10,10 +21,16 @@ if ("IntersectionObserver" in window) {
         }
       });
     },
-    { threshold: 0.2 }
+    { threshold: 0.18 }
   );
 
-  revealed.forEach((el) => io.observe(el));
+  revealed.forEach((element) => io.observe(element));
 } else {
-  revealed.forEach((el) => el.classList.add("is-visible"));
+  revealed.forEach((element) => element.classList.add("is-visible"));
 }
+
+window.addEventListener("scroll", updateScrollProgress, { passive: true });
+window.addEventListener("resize", updateScrollProgress);
+window.addEventListener("load", updateScrollProgress);
+
+updateScrollProgress();

@@ -5,22 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="ZIVRA STUDIO: marketing digital crudo, creativo y orientado a ventas reales.">
   <title>ZIVRA STUDIO | Marketing digital sin humo</title>
-  <link rel="icon" type="image/svg+xml" href="assets/logos/favicon-hoja-verde-fondo-negro.svg" media="(prefers-color-scheme: dark)">
-  <link rel="icon" type="image/svg+xml" href="assets/logos/favicon-hoja-negra-fondo-verde.svg" media="(prefers-color-scheme: light)">
-  <link rel="shortcut icon" href="assets/logos/favicon-hoja-verde-fondo-negro.svg">
+  <link rel="icon" type="image/png" href="assets/logos/favicon1.png" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/png" href="assets/logos/favicon2.png" media="(prefers-color-scheme: light)">
+  <link rel="shortcut icon" href="assets/logos/favicon1.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="scroll-rail" aria-hidden="true">
+    <span class="scroll-progress"></span>
+  </div>
   <header class="hero" id="inicio">
     <div class="bg-grid" aria-hidden="true"></div>
     <div class="glow glow-a" aria-hidden="true"></div>
     <div class="glow glow-b" aria-hidden="true"></div>
     <nav class="topbar container">
       <a class="brand" href="#inicio" aria-label="Ir al inicio">
-        <img src="assets/logos/logo-zivra-studio-verde.svg" alt="Logo Zivra Studio en verde">
+        <img src="assets/logos/logo_zivraverde.png" alt="Logo Zivra Studio en verde">
       </a>
       <a class="ig-pill" href="https://www.instagram.com/zivramkt/" target="_blank" rel="noopener noreferrer">
         Instagram
@@ -30,7 +33,7 @@
     <div class="container hero-grid">
       <div class="hero-copy reveal">
         <p class="kicker">MARKETING DIGITAL SIN CARA DE PRESENTACION DE POWERPOINT</p>
-        <h1>Tu marca no esta fea.<br>Esta mal vendida.</h1>
+        <h1>Tu marca no esta fea.<br><span class="lime">Esta mal vendida.</span></h1>
         <p class="lead">
           Hacemos estrategia, contenido y pauta para que dejes de publicar por fe y empieces a vender por sistema.
           Sin humo, sin frases de guru, sin "a ver que pasa".
@@ -47,7 +50,12 @@
       </div>
 
       <aside class="hero-visual reveal delay-1">
-        <img class="hero-mark" src="assets/logos/logo-hoja-verde.svg" alt="Logo hoja de Zivra en verde">
+        <span class="orbit orbit-a">CONTENIDO</span>
+        <span class="orbit orbit-b">Pauta</span>
+        <span class="orbit orbit-c">Branding</span>
+        <span class="pulse-ring ring-a" aria-hidden="true"></span>
+        <span class="pulse-ring ring-b" aria-hidden="true"></span>
+        <img class="hero-mark" src="assets/logos/logo_zivrahoja.png" alt="Logo hoja de Zivra en verde">
         <p class="quote">
           "No hacemos posts para que te digan 'que lindo'.<br>
           Los hacemos para que te compren."
@@ -56,11 +64,24 @@
     </div>
   </header>
 
+  <div class="ticker-strip" aria-hidden="true">
+    <div class="ticker-track">
+      <span>ESTRATEGIA QUE PEGA</span>
+      <span>ADS SIN HUMO</span>
+      <span>CONTENIDO QUE CIERRA</span>
+      <span>MARCAS CON MEMORIA</span>
+      <span>ESTRATEGIA QUE PEGA</span>
+      <span>ADS SIN HUMO</span>
+      <span>CONTENIDO QUE CIERRA</span>
+      <span>MARCAS CON MEMORIA</span>
+    </div>
+  </div>
+
   <main>
     <section class="section section-light" id="servicios">
       <div class="container">
         <p class="section-tag reveal">SERVICIOS</p>
-        <h2 class="reveal">Lo que hacemos para que dejes de botar plata en marketing</h2>
+        <h2 class="reveal">Lo que hacemos para que dejes de <span class="lime">botar plata</span> en marketing</h2>
         <div class="cards">
           <article class="card reveal">
             <h3>Estrategia con cerebro</h3>
@@ -81,7 +102,7 @@
     <section class="section section-dark">
       <div class="container">
         <p class="section-tag reveal">METODO</p>
-        <h2 class="reveal">Nuestro proceso anti-humo</h2>
+        <h2 class="reveal">Nuestro proceso <span class="lime">anti-humo</span></h2>
         <div class="steps">
           <div class="step reveal">
             <span class="step-num">01</span>
@@ -105,31 +126,31 @@
     <section class="section section-light" id="logos">
       <div class="container">
         <p class="section-tag reveal">MARCA</p>
-        <h2 class="reveal">Sistema de logos ZIVRA</h2>
+        <h2 class="reveal">Sistema de logos <span class="lime">ZIVRA</span></h2>
         <div class="logo-grid">
           <article class="logo-card dark reveal">
             <h3>Logo con nombre + hoja (verde)</h3>
-            <img src="assets/logos/logo-zivra-studio-verde.svg" alt="Logo Zivra Studio en color verde sobre fondo oscuro">
+            <img src="assets/logos/logo_zivraverdeconlogohoja.png" alt="Logo Zivra Studio en color verde sobre fondo oscuro" loading="lazy">
           </article>
           <article class="logo-card light reveal delay-1">
             <h3>Logo con nombre + hoja (negro)</h3>
-            <img src="assets/logos/logo-zivra-studio-negro.svg" alt="Logo Zivra Studio en color negro sobre fondo claro">
+            <img src="assets/logos/logo_zivranegroconlogohoja.png" alt="Logo Zivra Studio en color negro sobre fondo claro" loading="lazy">
           </article>
           <article class="logo-card dark reveal">
             <h3>Solo hoja (verde)</h3>
-            <img src="assets/logos/logo-hoja-verde.svg" alt="Logo hoja Zivra en verde">
+            <img src="assets/logos/logo_zivrahoja.png" alt="Logo hoja Zivra en verde" loading="lazy">
           </article>
           <article class="logo-card light reveal delay-1">
             <h3>Solo hoja (negro)</h3>
-            <img src="assets/logos/logo-hoja-negra.svg" alt="Logo hoja Zivra en negro">
+            <img src="assets/logos/logo_zivrahojanegrobordesblancos.png" alt="Logo hoja Zivra en negro" loading="lazy">
           </article>
           <article class="logo-card dark reveal">
             <h3>Favicon 1</h3>
-            <img src="assets/logos/favicon-hoja-verde-fondo-negro.svg" alt="Favicon hoja verde con fondo negro">
+            <img src="assets/logos/favicon1.png" alt="Favicon hoja verde con fondo negro" loading="lazy">
           </article>
           <article class="logo-card lime reveal delay-1">
             <h3>Favicon 2</h3>
-            <img src="assets/logos/favicon-hoja-negra-fondo-verde.svg" alt="Favicon hoja negra con fondo verde">
+            <img src="assets/logos/favicon2.png" alt="Favicon hoja negra con fondo verde" loading="lazy">
           </article>
         </div>
       </div>
@@ -138,7 +159,7 @@
     <section class="section cta" id="contacto">
       <div class="container reveal">
         <p class="section-tag">SIGUIENTE PASO</p>
-        <h2>Si vas a seguir publicando por intuicion, mejor no publiques.</h2>
+        <h2>Si vas a seguir publicando por intuicion, <span class="lime">mejor no publiques.</span></h2>
         <p>Si quieres una estrategia que pegue, convierta y deje marca, escribenos ya por Instagram.</p>
         <a class="btn btn-primary large" href="https://www.instagram.com/zivramkt/" target="_blank" rel="noopener noreferrer">
           Ir a @zivramkt
@@ -149,7 +170,7 @@
 
   <footer class="footer">
     <div class="container footer-wrap">
-      <img src="assets/logos/logo-zivra-studio-blanco.svg" alt="Logo Zivra Studio en blanco">
+      <img src="assets/logos/logo_zivrablanco.png" alt="Logo Zivra Studio en blanco">
       <p>Marketing digital con personalidad. Sin humo.</p>
       <a href="https://www.instagram.com/zivramkt/" target="_blank" rel="noopener noreferrer">
         instagram.com/zivramkt

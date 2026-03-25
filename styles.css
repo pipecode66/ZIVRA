@@ -818,6 +818,10 @@ h1 {
   margin-inline: auto;
 }
 
+.cta-actions {
+  justify-content: center;
+}
+
 .microcopy {
   margin: 1rem 0 0;
   font-size: 0.94rem;

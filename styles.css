@@ -760,7 +760,7 @@ h1 {
 .results-grid {
   margin-top: 1.8rem;
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
 }
 
@@ -769,16 +769,8 @@ h1 {
   gap: 0;
 }
 
-.result-card.feature {
-  grid-row: span 2;
-}
-
-.tall {
-  min-height: 520px;
-}
-
-.medium {
-  min-height: 240px;
+.result-media {
+  min-height: 220px;
 }
 
 .result-body {
@@ -949,7 +941,10 @@ h1 {
 
 @media (max-width: 1080px) {
   .hero-grid,
-  .authority-grid,
+  .authority-grid {
+    grid-template-columns: 1fr;
+  }
+
   .results-grid {
     grid-template-columns: 1fr;
   }
@@ -957,10 +952,6 @@ h1 {
   .service-grid,
   .process-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .result-card.feature {
-    grid-row: auto;
   }
 
   .hero-poster {
@@ -1017,12 +1008,8 @@ h1 {
     min-height: 330px;
   }
 
-  .tall {
-    min-height: 360px;
-  }
-
-  .medium {
-    min-height: 220px;
+  .result-media {
+    min-height: 200px;
   }
 }
 
